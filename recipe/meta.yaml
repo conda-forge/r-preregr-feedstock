@@ -1,4 +1,4 @@
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/preregr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/preregr/preregr_{{ version }}.tar.gz
-  sha256: c97dbb9b87d878fa096297e0997d64c3bc3cb38e16575e36fad07939b6c0e669
+  sha256: 1794290bcf913836f23bf33566c4848efb1e508332bf1bb20c375919ce3d0207
 
 build:
   merge_build_host: true  # [win]
